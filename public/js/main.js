@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	searchWeather();
+	getWeather();
 });
 
 // function getDistance() {
@@ -49,9 +49,9 @@ $(document).ready(function() {
 // 	}
 // }
 
-$ means jquery
-$.ajax is a jQuery function to give front end something from back end. in this specific
-case, it's to use the URL, and if successful, passes the data to the front end
+//$ means jquery
+//$.ajax is a jQuery function to give front end something from back end. in this specific
+//case, it's to use the URL, and if successful, passes the data to the front end
 function getWeather(searchQuery) {
 	var url = 'http://api.openweathermap.org/data/2.5/weather?';
 	var params = {
