@@ -1,28 +1,28 @@
 $(document).ready(function() {
-	getWeather();
+	searchWeather();
 });
 
-function getDistance() {
+// function getDistance() {
 	
-	var url = 'https://maps.googleapis.com/maps/api/distancematrix/json?';
-	var params = {
-		APPID: googleApiKey,
-		units: 'imperial'
-	};
+// 	var url = 'https://maps.googleapis.com/maps/api/distancematrix/json?';
+// 	var params = {
+// 		APPID: googleApiKey,
+// 		units: 'imperial'
+// 	};
 
 
-}
+// }
 
-function storeOrigin() {
-	var originQuery = $('.origin').val();
+// function storeOrigin() {
+// 	var originQuery = $('.origin').val();
 
 
-}
+// }
 
-function storeDestination() {
-	var destinationQuery = $('.destination').val();
+// function storeDestination() {
+// 	var destinationQuery = $('.destination').val();
 
-}
+// }
 
 // function getWeather(searchQuery) {
 // 	var url = 'http://api.openweathermap.org/data/2.5/weather?';
