@@ -35,7 +35,7 @@ function initMap() {
   });
 
   setMarkers(map);
-
+}
 
 function setMarkers(map) {
 	var marker = new google.maps.Marker({
