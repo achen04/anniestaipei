@@ -40,12 +40,12 @@ var mountainLatLng = {lat: 25.093, lng: 121.571};
 function setMarkers(map) {
 	var image = {
 		url: 'icons/MarkerMountain.png',
-		size: new google.maps.Size(1136, 852),
+		size: new google.maps.Size(250, 250),
 		origin: new google.maps.Point(0,0),
 		anchor: new google.maps.Point(110, 116)
 	};
 	var shape = {
-		coords: [1,1, 224, 119],
+		coords: [1,1, 249, 249],
 		type: 'rect'
 	};
 
