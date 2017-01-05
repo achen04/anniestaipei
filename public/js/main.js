@@ -41,7 +41,7 @@ function setMarkers(map) {
 	var image = {
 		url: 'icons/MarkerMountain.png',
 		size: new google.maps.Size(225, 120),
-		origin: new google.maps.point(0,0),
+		origin: new google.maps.Point(0,0),
 		anchor: new google.maps.Point(110, 116)
 	};
 	var shape = {
@@ -51,12 +51,12 @@ function setMarkers(map) {
 
 
 	var marker = new google.maps.Marker({
-    position: mountainLatLng,
-    map: map,
-    icon: image,
-    shape: shape,
-    animation: google.maps.Animation.DROP,
-    title: 'Mountain!'
+	    position: mountainLatLng,
+	    map: map,
+	    icon: image,
+	    shape: shape,
+	    animation: google.maps.Animation.DROP,
+	    title: 'Mountain!'
   });
 }
 
