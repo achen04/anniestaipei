@@ -39,14 +39,14 @@ var mountainLatLng = {lat: 25.093, lng: 121.571};
 
 function setMarkers(map) {
 	var image = {
-		url: 'https://s29.postimg.org/r7nvjwmpj/Marker_Mountain.png',
-		size: new google.maps.Size(852, 852),
+		url: 'icons/IconMt.png',
+		size: new google.maps.Size(225, 120),
 		origin: new google.maps.Point(0,0),
-		anchor: new google.maps.Point(110, 116)
+		anchor: new google.maps.Point(189, 116)
 	};
 	var shape = {
-		coords: [1,1, 249, 249],
-		type: 'rect'
+      coord: [12,4,216,22,212,74,157,70,184,111,125,67,6,56],
+      type: 'poly'
 	};
 
 
