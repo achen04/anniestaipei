@@ -34,7 +34,11 @@ function initMap() {
     center: myLatLng
   });
 
-  var marker = new google.maps.Marker({
+  setMarkers(map);
+
+
+function setMarkers(map) {
+	var marker = new google.maps.Marker({
     position: mountainLatLng,
     map: map,
     animation: google.maps.Animation.DROP,
