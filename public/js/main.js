@@ -1,7 +1,3 @@
-// $(document).ready(function() {
-// 	initMap();
-// });
-
 
 var map;
       function initMap() {
@@ -22,8 +18,8 @@ var map;
 var markerPositionMountain = new google.maps.LatLng(25.093,121.571);
 var marker = new google.maps.Marker({
 	position: markerPositionMountain,
+	map: map,
 	title: 'hello world!'
 });
 
 // To add the marker to the map, call setMap()
-marker.setMap(map);
