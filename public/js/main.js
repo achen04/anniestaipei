@@ -37,6 +37,7 @@ function initMap() {
   var marker = new google.maps.Marker({
     position: mountainLatLng,
     map: map,
+    animation: google.maps.Animation.DROP,
     title: 'Hello World!'
   });
 }
