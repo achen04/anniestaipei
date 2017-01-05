@@ -38,14 +38,12 @@ function initMap() {
 var mountainLatLng = {lat: 25.093, lng: 121.571};
 
 function setMarkers(map) {
-	var image = "https://lh4.googleusercontent.com/5c_9rWboo8aMd-WAdgnZ8bxuAPvNZd9oSgV2SybImAG_D3LVuCZZqE0y1TFLSAUsXTxXE6VdUDtitrs=w1264-h750"
-	
-	// var image = {
-
-	// 	// url: 
-	// 	// origin: new google.maps.Point(0,0),
-	// 	// anchor: new google.maps.Point(110, 116)
-	// };
+	var image = {
+		url: 'https://s29.postimg.org/r7nvjwmpj/Marker_Mountain.png',
+		size: new google.maps.Size(250, 250),
+		origin: new google.maps.Point(0,0),
+		anchor: new google.maps.Point(110, 116)
+	};
 	var shape = {
 		coords: [1,1, 249, 249],
 		type: 'rect'
