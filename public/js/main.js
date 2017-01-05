@@ -40,7 +40,7 @@ var mountainLatLng = {lat: 25.093, lng: 121.571};
 function setMarkers(map) {
 	var image = {
 		url: 'https://s29.postimg.org/r7nvjwmpj/Marker_Mountain.png',
-		size: new google.maps.Size(250, 250),
+		size: new google.maps.Size(852, 852),
 		origin: new google.maps.Point(0,0),
 		anchor: new google.maps.Point(110, 116)
 	};
