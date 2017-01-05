@@ -33,9 +33,8 @@ function initMap() {
     center: myLatLng
   });
 
-var mountainLatLng = {lat: 25.093, 121.571}
   var marker = new google.maps.Marker({
-    position: mountainLatLng,
+    position: myLatLng,
     map: map,
     title: 'Hello World!'
   });
