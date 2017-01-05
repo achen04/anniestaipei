@@ -27,6 +27,7 @@
 
 function initMap() {
   var myLatLng = {lat: 25.033, lng: 121.565};
+  var mountainLatLng = {lat: 25.093, lng: 121.571};
 
   var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 12,
@@ -34,7 +35,7 @@ function initMap() {
   });
 
   var marker = new google.maps.Marker({
-    position: myLatLng,
+    position: mountainLatLng,
     map: map,
     title: 'Hello World!'
   });
