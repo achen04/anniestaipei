@@ -26,16 +26,17 @@
 
 
 function initMap() {
-  var myLatLng = {lat: 25.033, lng: 121.565};
-  var mountainLatLng = {lat: 25.093, lng: 121.571};
+  var center = {lat: 25.033, lng: 121.565};
 
   var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 12,
-    center: myLatLng
+    center: center
   });
 
   setMarkers(map);
 }
+
+var mountainLatLng = {lat: 25.093, lng: 121.571};
 
 function setMarkers(map) {
 	var marker = new google.maps.Marker({
