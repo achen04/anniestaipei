@@ -24,7 +24,6 @@
 
 // // To add the marker to the map, call setMap()
 
-
 function initMap() {
   var center = {lat: 25.033, lng: 121.565};
 
@@ -39,10 +38,32 @@ function initMap() {
 var mountainLatLng = {lat: 25.093, lng: 121.571};
 
 function setMarkers(map) {
+	var image = {
+		url: 'icons/MarkerMountain.png',
+		size: new google.maps.Size(225, 120),
+		origin: new google.maps.point(0,0),
+		anchor: new google.maps.Point(110, 116)
+	};
+	var shape = {
+		coords: [1,1, 224, 119],
+		type: 'rect'
+	};
+
+
 	var marker = new google.maps.Marker({
     position: mountainLatLng,
     map: map,
+    icon: image,
+    shape: shape,
     animation: google.maps.Animation.DROP,
-    title: 'Hello World!'
+    title: 'Mountain!'
   });
 }
+
+
+
+
+
+
+
+
