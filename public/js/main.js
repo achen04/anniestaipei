@@ -39,7 +39,7 @@ var mountainLatLng = {lat: 25.093, lng: 121.571};
 
 function setMarkers(map) {
 	var image = {
-		url: 'http://free-icon-rainbow.com/i/icon_03990/icon_039900_256.png',
+		url: './icons/IconMt.png',
 		size: new google.maps.Size(256, 256),
 		origin: new google.maps.Point(0,0),
 		anchor: new google.maps.Point(110, 116)
