@@ -8,16 +8,14 @@ function initMap() {
     center: center
   });
 
-
-//Variable containing the style for the pop-up infobox.
-var pop_up_info = "border: 0px solid black; background-color: #ffffff; padding:15px; margin-top: 8px; border-radius:10px; -moz-border-radius: 10px; -webkit-border-radius: 10px; box-shadow: 1px 1px #888;";
-
-
   setMarkers(map);
 }
 
 // The Latitude and Longitude of each marker
 var mountainLatLng = {lat: 25.093, lng: 121.571};
+
+//Variable containing the style for the pop-up infobox.
+var pop_up_info = "border: 0px solid black; background-color: #ffffff; padding:15px; margin-top: 8px; border-radius:10px; -moz-border-radius: 10px; -webkit-border-radius: 10px; box-shadow: 1px 1px #888;";
 
 function setMarkers(map) {
 	// Defining the image of each marker
