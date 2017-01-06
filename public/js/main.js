@@ -39,7 +39,8 @@ function setMarkers(map) {
 	    icon: image,
 	    shape: shape,
 	    animation: google.maps.Animation.DROP,
-	    title: 'Mountain!'
+	    title: 'Mountain Hiking Trail - City View',
+	    zIndex: 107
   });
 }
 
