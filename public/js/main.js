@@ -54,7 +54,7 @@ boxTextMountain.innerHTML = '<span class="pop_up_box_text"><img src="content/mou
 var infoBoxOptionsMountain = {
 	content: boxTextMountain,
 	disableAutoPan: false,
-	maxWidth: 0
+	maxWidth: 0,
 	pixelOffset: new google.maps.Size(-241, 0),
 	zIndex: null,
 	boxStyle: {
