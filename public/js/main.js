@@ -43,6 +43,7 @@ function setMarkers(map) {
 	    zIndex: 107
   });
 }
+debugger;
 
 // Information to go in the pop-up info box.
 var boxTextMountain = document.createElement("div");
