@@ -16,7 +16,7 @@ var shiLinLatLng = {lat: 25.088, lng: 121.525};
 var waffleLatLng = {lat: 25.053, lng: 121.521};
 var hotspringLatLng = {lat: 25.136, lng: 121.506};
 var noodleLatLng = {lat: 25.033, lng: 121.528};
-var titleLatLng = {lat: 25.158, lng: 121.405};
+var titleLatLng = {lat: 25.131, lng: 121.371};
 
 //Variable containing the style for the pop-up infobox.
 var pop_up_info = "border: 0px solid black; background-color: #ffffff; padding:15px; margin-top: 8px; border-radius:10px; -moz-border-radius: 10px; -webkit-border-radius: 10px; box-shadow: 1px 1px #888;";
