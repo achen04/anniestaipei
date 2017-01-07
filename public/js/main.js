@@ -31,7 +31,7 @@ var pop_up_info = "border: 0px solid black; background-color: #ffffff; padding:1
 		anchor: new google.maps.Point(53, 105)
 	};
 	var shape = {
-      coord: [12,4,216,22,212,74,157,70,184,111,125,67,6,56],
+      coord: [86,106,109,97,116,90,167,75,179,47,156,20,114,12,63,22,45,48,56,73,96,90],
       type: 'poly'
 	};
 
