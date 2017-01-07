@@ -60,7 +60,7 @@ var infoBoxOptionsMountain = {
 		width: "430px"
 	},
 	closeBoxMargin: "10px 2px 2px 2px",
-	closeBoxURL: "icons/button_close.png",
+	closeBoxURL: "../content/button_close.png",
 	infoBoxClearance: new google.maps.Size(1, 1),
 	isHidden: false,
 	pane: "floatPane",
