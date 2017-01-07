@@ -167,7 +167,7 @@ var pop_up_info = "border: 0px solid black; background-color: #ffffff; padding:1
 	    icon: image,
 	    shape: shape,
 	    animation: google.maps.Animation.DROP,
-	    title: 'Annie's Taipei,
+	    title: 'Annies Taipei',
 	    zIndex: 111
   });
 
