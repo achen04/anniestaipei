@@ -45,7 +45,7 @@ var pop_up_info = "border: 0px solid black; background-color: #ffffff; padding:1
 // Information to go in the pop-up info box.
 var boxTextMountain = document.createElement("div");
 boxTextMountain.style.cssText = pop_up_info;
-boxTextMountain.innerHTML = '<span class="pop_up_box_text"><img src="../../content/mountain.jpg" width="400" height="285" border="0" /></span>';
+boxTextMountain.innerHTML = '<span class="pop_up_box_text"><img src="../content/mountain.jpg" width="400" height="285" border="0" /></span>';
 
 // Sets up the options of the pop up info box
 var infoBoxOptionsMountain = {
