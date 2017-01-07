@@ -98,7 +98,7 @@ var pop_up_info = "border: 0px solid black; background-color: #ffffff; padding:1
 // ************** HOTSPRING MARKER ******************* //
 // Defining the image of each marker
 	var image = {
-		url: '../content/IconHaffle.png',
+		url: '../content/IconHotspring.png',
 		size: new google.maps.Size(225, 120),
 		origin: new google.maps.Point(0,0),
 		anchor: new google.maps.Point(53, 105)
