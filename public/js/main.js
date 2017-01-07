@@ -1,7 +1,7 @@
 
 
 function initMap() {
-  var center = {lat: 25.033, lng: 121.565};
+  var center = {lat: 25.066, lng: 121.537};
 
   var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 12,
