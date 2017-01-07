@@ -16,6 +16,7 @@ var shiLinLatLng = {lat: 25.088, lng: 121.525};
 var waffleLatLng = {lat: 25.053, lng: 121.521};
 var hotspringLatLng = {lat: 25.136, lng: 121.506};
 var noodleLatLng = {lat: 25.033, lng: 121.528};
+var titleLatLng = {lat: 25.158, lng: 121.405};
 
 //Variable containing the style for the pop-up infobox.
 var pop_up_info = "border: 0px solid black; background-color: #ffffff; padding:15px; margin-top: 8px; border-radius:10px; -moz-border-radius: 10px; -webkit-border-radius: 10px; box-shadow: 1px 1px #888;";
@@ -141,6 +142,32 @@ var pop_up_info = "border: 0px solid black; background-color: #ffffff; padding:1
 	    shape: shape,
 	    animation: google.maps.Animation.DROP,
 	    title: 'Yong Kang Beef Noodles',
+	    zIndex: 111
+  });
+
+
+// ************** TITLE MARKER ******************* //
+// Note: To be changed into a title that will always remain top left
+// despite zomming
+	var image = {
+		url: '../content/Title.png',
+		size: new google.maps.Size(225, 120),
+		origin: new google.maps.Point(0,0),
+		anchor: new google.maps.Point(225, 120) // bottom left of image
+	};
+	var shape = {
+      coord: [12,4,216,22,212,74,157,70,184,111,125,67,6,56],
+      type: 'poly'
+	};
+
+// Setting the marker on the map
+	var mountainMarker = new google.maps.Marker({
+	    position: titleLatLng,
+	    map: map,
+	    icon: image,
+	    shape: shape,
+	    animation: google.maps.Animation.DROP,
+	    title: 'Annie's Taipei,
 	    zIndex: 111
   });
 
