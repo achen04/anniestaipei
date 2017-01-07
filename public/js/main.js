@@ -45,7 +45,8 @@ var pop_up_info = "border: 0px solid black; background-color: #ffffff; padding:1
 // Information to go in the pop-up info box.
 var boxTextMountain = document.createElement("div");
 boxTextMountain.style.cssText = pop_up_info;
-boxTextMountain.innerHTML = '<span class="pop_up_box_text"><img src="../content/mountain.jpg" width="400" height="285" border="0" /></span> <p> Mountain </p>';
+boxTextMountain.innerHTML = '<span class="pop_up_box_text"><img src="../content/mountain.jpg" width="400" height="285" border="0" /></span> 
+							<p> 剪刀山 Mountain Trail - A roughly 1.5 hour trial with a fantastic city view. </p>';
 
 // Sets up the options of the pop up info box
 var infoBoxOptionsMountain = {
@@ -76,10 +77,7 @@ google.maps.event.addListener(marker, "click", function (e) {
 	infoBoxMountain.open(map, this);
 	//Changes the z-index property of the marker to make the marker appera on top of other markers.
 	this.setZIndex(google.maps.Marker.MAX_ZINDEX + 1);
-	//Sets the Mountain marker to be the center of the map
-	map.setCenter(marker.getPosition());
 });
-
 
 }
 
