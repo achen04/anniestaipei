@@ -76,8 +76,6 @@ google.maps.event.addListener(marker, "click", function (e) {
 	infoBoxMountain.open(map, this);
 	//Changes the z-index property of the marker to make the marker appera on top of other markers.
 	this.setZIndex(google.maps.Marker.MAX_ZINDEX + 1);
-	//Zooms the map
-	setZoomWhenMarkerClicked();
 	//Sets the Mountain marker to be the center of the map
 	map.setCenter(marker.getPosition());
 });
