@@ -62,14 +62,14 @@ var infoBoxOptionsMountain = {
 	},
 	closeBoxMargin: "10px 2px 2px 2px",
 	closeBoxURL: "icons/button_close.png",
-	infoBoxClear: new google.maps.Size(1, 1),
+	infoBoxClearance: new google.maps.Size(1, 1),
 	isHidden: false,
 	pane: "floatPane",
 	enableEventPropagation: false
 };
 
 // Creates pop up info box for Mountain marker, and adding the options above
-var infoBoxMountain = new InfoBox(infoBoxOptionsMoutain);
+var infoBoxMountain = new InfoBox(infoBoxOptionsMountain);
 
 // Event listener for when it is clicked
 google.maps.event.addListern(marker, "click", function (e) {
