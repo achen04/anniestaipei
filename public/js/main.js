@@ -46,7 +46,7 @@ function setMarkers(map) {
 // Information to go in the pop-up info box.
 var boxTextMountain = document.createElement("div");
 boxTextMountain.style.cssText = pop_up_info;
-boxTextMountain.innerHTML = '<span class="pop_up_box_text"><img src="../content/mountain.jpg" width="400" height="285" border="0" /></span>';
+boxTextMountain.innerHTML = '<span class="pop_up_box_text"><img src="../../content/mountain.jpg" width="400" height="285" border="0" /></span>';
 
 // Sets up the options of the pop up info box
 var infoBoxOptionsMountain = {
@@ -56,7 +56,7 @@ var infoBoxOptionsMountain = {
 	pixelOffset: new google.maps.Size(-241, 0),
 	zIndex: null,
 	boxStyle: {
-		background:"url('infobox/pop_up_box_top_arrow.png') no-repeat",
+		background:"url('../../infobox/pop_up_box_top_arrow.png') no-repeat",
 		opacity: 1,
 		width: "430px"
 	},
