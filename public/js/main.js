@@ -69,7 +69,7 @@ var infoBoxOptionsMountain = {
 };
 
 // Creates pop up info box for Mountain marker, and adding the options above
-infoBoxMountain = new InfoBox(infoBoxOptionsMoutain);
+var infoBoxMountain = new InfoBox(infoBoxOptionsMoutain);
 
 // Event listener for when it is clicked
 google.maps.event.addListern(marker, "click", function (e) {
