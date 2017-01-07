@@ -156,8 +156,8 @@ var pop_up_info = "border: 0px solid black; background-color: #ffffff; padding:1
 		anchor: new google.maps.Point(225, 120) // bottom left of image
 	};
 	var shape = {
-      coord: [12,4,216,22,212,74,157,70,184,111,125,67,6,56],
-      type: 'poly'
+      coord: [0, 0, 225, 120],
+      type: 'rect'
 	};
 
 // Setting the marker on the map
@@ -168,7 +168,7 @@ var pop_up_info = "border: 0px solid black; background-color: #ffffff; padding:1
 	    shape: shape,
 	    animation: google.maps.Animation.DROP,
 	    title: 'Annies Taipei',
-	    zIndex: 111
+	    zIndex: 112
   });
 
 
@@ -178,7 +178,6 @@ var boxTextMountain = document.createElement("div");
 boxTextMountain.style.cssText = pop_up_info;
 boxTextMountain.innerHTML = '<span class="pop_up_box_text"><img src="../content/mountainview.jpg" width="400" height="285" border="0" /></span> <p> 剪刀山 Mountain Trail - A roughly 1.5 hour trial with a fantastic city view. </p>';
 
-debugger; 
 
 // Sets up the options of the pop up info box
 var infoBoxOptionsMountain = {
