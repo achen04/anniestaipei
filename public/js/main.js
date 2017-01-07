@@ -16,8 +16,8 @@ var mountainLatLng = {lat: 25.093, lng: 121.571};
 //Variable containing the style for the pop-up infobox.
 var pop_up_info = "border: 0px solid black; background-color: #ffffff; padding:15px; margin-top: 8px; border-radius:10px; -moz-border-radius: 10px; -webkit-border-radius: 10px; box-shadow: 1px 1px #888;";
 
-//https://s27.postimg.org/bfo4kh0g3/Icon_Mt.png
-	// Defining the image of each marker
+
+// Defining the image of each marker
 	var image = {
 		url: '../content/IconMt.png',
 		size: new google.maps.Size(225, 120),
@@ -30,7 +30,7 @@ var pop_up_info = "border: 0px solid black; background-color: #ffffff; padding:1
 	};
 
 	// Setting the marker on the map
-	var marker = new google.maps.Marker({
+	var mountainMarker = new google.maps.Marker({
 	    position: mountainLatLng,
 	    map: map,
 	    icon: image,
@@ -71,7 +71,7 @@ var infoBoxOptionsMountain = {
 var infoBoxMountain = new InfoBox(infoBoxOptionsMountain);
 
 // Event listener for when it is clicked
-google.maps.event.addListener(marker, "click", function (e) {
+google.maps.event.addListener(mountainMarker, "click", function (e) {
 	//Open the Mountain info box
 	infoBoxMountain.open(map, this);
 	//Changes the z-index property of the marker to make the marker appera on top of other markers.
