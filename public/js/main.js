@@ -46,7 +46,7 @@ var pop_up_info = "border: 0px solid black; background-color: #ffffff; padding:1
 var boxTextMountain = document.createElement("div");
 boxTextMountain.style.cssText = pop_up_info;
 boxTextMountain.innerHTML = '<span class="pop_up_box_text"><img src="../content/mountain.jpg" width="400" height="285" border="0" /></span> 
-							<p> 剪刀山 Mountain Trail - A roughly 1.5 hour trial with a fantastic city view. </p>';
+	<p> Mountain </p>';
 
 // Sets up the options of the pop up info box
 var infoBoxOptionsMountain = {
