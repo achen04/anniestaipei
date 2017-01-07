@@ -71,7 +71,7 @@ var infoBoxOptionsMountain = {
 var infoBoxMountain = new InfoBox(infoBoxOptionsMountain);
 
 // Event listener for when it is clicked
-google.maps.event.addListern(marker, "click", function (e) {
+google.maps.event.addListener(marker, "click", function (e) {
 	//Open the Mountain info box
 	infoBoxMountain.open(map, this);
 	//Changes the z-index property of the marker to make the marker appera on top of other markers.
