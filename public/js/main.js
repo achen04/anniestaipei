@@ -24,7 +24,7 @@ var pop_up_info = "border: 0px solid black; background-color: #ffffff; padding:1
 		url: '../content/IconMt.png',
 		size: new google.maps.Size(225, 120),
 		origin: new google.maps.Point(0,0),
-		anchor: new google.maps.Point(189, 116)
+		anchor: new google.maps.Point(53, 105)
 	};
 	var shape = {
       coord: [12,4,216,22,212,74,157,70,184,111,125,67,6,56],
