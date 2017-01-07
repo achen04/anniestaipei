@@ -60,7 +60,7 @@ var pop_up_info = "border: 0px solid black; background-color: #ffffff; padding:1
 	};
 
 // Setting the marker on the map
-	var mountainMarker = new google.maps.Marker({
+	var shiLinMarker = new google.maps.Marker({
 	    position: shiLinLatLng,
 	    map: map,
 	    icon: image,
@@ -85,7 +85,7 @@ var pop_up_info = "border: 0px solid black; background-color: #ffffff; padding:1
 	};
 
 // Setting the marker on the map
-	var mountainMarker = new google.maps.Marker({
+	var waffleMarker = new google.maps.Marker({
 	    position: waffleLatLng,
 	    map: map,
 	    icon: image,
@@ -111,7 +111,7 @@ var pop_up_info = "border: 0px solid black; background-color: #ffffff; padding:1
 	};
 
 // Setting the marker on the map
-	var mountainMarker = new google.maps.Marker({
+	var hotspringMarker = new google.maps.Marker({
 	    position: hotspringLatLng,
 	    map: map,
 	    icon: image,
@@ -135,7 +135,7 @@ var pop_up_info = "border: 0px solid black; background-color: #ffffff; padding:1
 	};
 
 // Setting the marker on the map
-	var mountainMarker = new google.maps.Marker({
+	var noodleMarker = new google.maps.Marker({
 	    position: noodleLatLng,
 	    map: map,
 	    icon: image,
@@ -161,7 +161,7 @@ var pop_up_info = "border: 0px solid black; background-color: #ffffff; padding:1
 	};
 
 // Setting the marker on the map
-	var mountainMarker = new google.maps.Marker({
+	var titleMarker = new google.maps.Marker({
 	    position: titleLatLng,
 	    map: map,
 	    icon: image,
