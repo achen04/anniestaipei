@@ -55,7 +55,7 @@ var infoBoxOptionsMountain = {
 	pixelOffset: new google.maps.Size(-241, 0),
 	zIndex: null,
 	boxStyle: {
-		background:"url('../../infobox/pop_up_box_top_arrow.png') no-repeat",
+		background:"url('../content/pop_up_box_top_arrow.png') no-repeat",
 		opacity: 1,
 		width: "430px"
 	},
