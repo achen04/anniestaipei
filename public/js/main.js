@@ -9,7 +9,7 @@ function initMap() {
   });
 
   setMarkers(map);
-}
+
 
 // The Latitude and Longitude of each marker
 var mountainLatLng = {lat: 25.093, lng: 121.571};
@@ -84,7 +84,7 @@ google.maps.event.addListern(marker, "click", function (e) {
 });
 
 
-
+}
 
 
 
