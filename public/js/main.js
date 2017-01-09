@@ -243,7 +243,7 @@ var infoBoxOptionsShiLin = {
 };
 
 // Creates pop up info box for Mountain marker, and adding the options above
-var infoBoxMountain = new InfoBox(infoBoxOptionsShiLin);
+var infoBoxShiLin = new InfoBox(infoBoxOptionsShiLin);
 
 // Event listener for when it is clicked
 google.maps.event.addListener(shiLinMarker, "click", function (e) {
