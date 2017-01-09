@@ -218,8 +218,8 @@ google.maps.event.addListener(mountainMarker, "click", function (e) {
 // **************  SHILIN INFO ******************* //
 // Information to go in the pop-up info box.
 var boxTextShiLin = document.createElement("div");
-boxTextMountain.style.cssText = pop_up_info;
-boxTextMountain.innerHTML = '<span class="pop_up_box_text"><img src="../content/shilin.jpg" width="400" height="285" border="0" /></span> <p> ShiLin Nightmarket with great food, games, and lots to shop! </p>';
+boxTextShiLin.style.cssText = pop_up_info;
+boxTextShiLin.innerHTML = '<span class="pop_up_box_text"><img src="../content/shilin.jpg" width="400" height="285" border="0" /></span> <p> ShiLin Nightmarket with great food, games, and lots to shop! </p>';
 
 
 // Sets up the options of the pop up info box
