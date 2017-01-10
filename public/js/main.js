@@ -246,7 +246,7 @@ var infoBoxShiLin = new InfoBox(infoBoxOptionsShiLin);
 // Event listener for when it is clicked
 google.maps.event.addListener(shiLinMarker, "click", function (e) {
 	//Open the Mountain info box
-	infoBoxOptionsShiLin.open(map, this);
+	infoBoxShiLin.open(map, this);
 	//Changes the z-index property of the marker to make the marker appera on top of other markers.
 	this.setZIndex(google.maps.Marker.MAX_ZINDEX + 1);
 });
