@@ -1,4 +1,3 @@
-// Note: Only the Mountain marker has a pop up info currently
 
 function initMap() {
   var center = {lat: 25.066, lng: 121.537};
