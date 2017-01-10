@@ -209,7 +209,7 @@ google.maps.event.addListener(mountainMarker, "click", function (e) {
 	//Open the Mountain info box
 	infoBoxMountain.open(map, this);
 	//Changes the z-index property of the marker to make the marker appear on top of other markers.
-	//this.setZIndex(google.maps.Marker.MAX_ZINDEX + 1);
+	this.setZIndex(google.maps.Marker.MAX_ZINDEX + 1);
 });
 
 }
@@ -250,7 +250,7 @@ google.maps.event.addListener(shiLinMarker, "click", function (e) {
 	//Open the Mountain info box
 	infoBoxOptionsShiLin.open(map, this);
 	//Changes the z-index property of the marker to make the marker appear on top of other markers.
-	//this.setZIndex(google.maps.Marker.MAX_ZINDEX + 1);
+	this.setZIndex(google.maps.Marker.MAX_ZINDEX + 1);
 });
 
 }
