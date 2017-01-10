@@ -208,20 +208,17 @@ var infoBoxMountain = new InfoBox(infoBoxOptionsMountain);
 google.maps.event.addListener(mountainMarker, "click", function (e) {
 	//Open the Mountain info box
 	infoBoxMountain.open(map, this);
-	//Changes the z-index property of the marker to make the marker appera on top of other markers.
+	//Changes the z-index property of the marker to make the marker appear on top of other markers.
 	this.setZIndex(google.maps.Marker.MAX_ZINDEX + 1);
 });
 
 
 
 // **************  SHILIN INFO ******************* //
-// Information to go in the pop-up info box.
 var boxTextShiLin = document.createElement("div");
 boxTextShiLin.style.cssText = pop_up_info;
 boxTextShiLin.innerHTML = '<span class="pop_up_box_text"><img src="../content/shilin.jpg" width="400" height="285" border="0" /></span> <p> ShiLin Nightmarket with great food, games, and lots to shop! </p>';
 
-
-// Sets up the options of the pop up info box
 var infoBoxOptionsShiLin = {
 	content: boxTextShiLin,
 	disableAutoPan: false,
@@ -241,26 +238,18 @@ var infoBoxOptionsShiLin = {
 	enableEventPropagation: false
 };
 
-// Creates pop up info box for Mountain marker, and adding the options above
 var infoBoxShiLin = new InfoBox(infoBoxOptionsShiLin);
-
-// Event listener for when it is clicked
 google.maps.event.addListener(shiLinMarker, "click", function (e) {
-	//Open the Mountain info box
 	infoBoxShiLin.open(map, this);
-	//Changes the z-index property of the marker to make the marker appera on top of other markers.
 	this.setZIndex(google.maps.Marker.MAX_ZINDEX + 1);
 });
 
 
 // **************  HOTSPRING INFO ******************* //
-// Information to go in the pop-up info box.
 var boxTextHotspring = document.createElement("div");
 boxTextHotspring.style.cssText = pop_up_info;
 boxTextHotspring.innerHTML = '<span class="pop_up_box_text"><img src="../content/hotspring.jpg" width="400" height="285" border="0" /></span> <p> The Beitou Hotsprings are quite a site to see! If you are visiting during the winter, check out all the nearby hotspring hotels and open areas that you can firsthand experience the natural hotsprings. </p>';
 
-
-// Sets up the options of the pop up info box
 var infoBoxOptionsHotspring = {
 	content: boxTextHotspring,
 	disableAutoPan: false,
@@ -279,19 +268,40 @@ var infoBoxOptionsHotspring = {
 	pane: "floatPane",
 	enableEventPropagation: false
 };
-
-// Creates pop up info box for Mountain marker, and adding the options above
 var infoBoxHotspring = new InfoBox(infoBoxOptionsHotspring);
-
-// Event listener for when it is clicked
 google.maps.event.addListener(hotspringMarker, "click", function (e) {
-	//Open the Mountain info box
 	infoBoxHotspring.open(map, this);
-	//Changes the z-index property of the marker to make the marker appera on top of other markers.
 	this.setZIndex(google.maps.Marker.MAX_ZINDEX + 1);
 });
 
+// **************  NOODLES INFO ******************* //
+var boxTextNoodle = document.createElement("div");
+boxTextNoodle.style.cssText = pop_up_info;
+boxTextNoodle.innerHTML = '<span class="pop_up_box_text"><img src="../content/noodles.jpg" width="400" height="285" border="0" /></span> <p> Taiwan is known for its beef noodles and I have to say Yong Kang Beef Noodles are at the top of my beef noodles list! Be sure to get there earlier as there is usually a line. </p>';
 
+var infoBoxOptionsNoodle = {
+	content: boxTextNoodle,
+	disableAutoPan: false,
+	maxWidth: 0,
+	pixelOffset: new google.maps.Size(-241, 0),
+	zIndex: null,
+	boxStyle: {
+		background:"url('../content/pop_up_box_top_arrow.png') no-repeat",
+		opacity: 1,
+		width: "430px"
+	},
+	closeBoxMargin: "10px 2px 2px 2px",
+	closeBoxURL: "../content/button_close.png",
+	infoBoxClearance: new google.maps.Size(1, 1),
+	isHidden: false,
+	pane: "floatPane",
+	enableEventPropagation: false
+};
+var infoBoxNoodle = new InfoBox(infoBoxOptionsNoodle);
+google.maps.event.addListener(noodleMarker, "click", function (e) {
+	infoBoxNoodle.open(map, this);
+	this.setZIndex(google.maps.Marker.MAX_ZINDEX + 1);
+});
 
 }
 
