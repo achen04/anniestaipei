@@ -230,7 +230,7 @@ var infoBoxOptions = {
 	isHidden: false,
 	pane: "floatPane",
 	enableEventPropagation: false
-}
+};
 
 
 
