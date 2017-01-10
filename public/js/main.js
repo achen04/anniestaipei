@@ -303,6 +303,37 @@ google.maps.event.addListener(noodleMarker, "click", function (e) {
 	this.setZIndex(google.maps.Marker.MAX_ZINDEX + 1);
 });
 
+// **************  WAFFLE INFO ******************* //
+var boxTextWaffle = document.createElement("div");
+boxTextWaffle.style.cssText = pop_up_info;
+boxTextWaffle.innerHTML = '<span class="pop_up_box_text"><img src="../content/wafflegroup.jpg" width="400" height="285" border="0" /></span> <p> The Melange Cafe is a great place to hang out with friends for afternoon tea! They are known for their waffles and they have an awesome variety of tea and coffee drinks as well. It is also in a good location near the MRT with lots of small stores nearby to shop around! </p>';
+
+var infoBoxOptionsWaffle = {
+	content: boxTextWaffle,
+	disableAutoPan: false,
+	maxWidth: 0,
+	pixelOffset: new google.maps.Size(-241, 0),
+	zIndex: null,
+	boxStyle: {
+		background:"url('../content/pop_up_box_top_arrow.png') no-repeat",
+		opacity: 1,
+		width: "430px"
+	},
+	closeBoxMargin: "10px 2px 2px 2px",
+	closeBoxURL: "../content/button_close.png",
+	infoBoxClearance: new google.maps.Size(1, 1),
+	isHidden: false,
+	pane: "floatPane",
+	enableEventPropagation: false
+};
+var infoBoxWaffle = new InfoBox(infoBoxOptionsWaffle);
+google.maps.event.addListener(waffleMarker, "click", function (e) {
+	infoBoxWaffle.open(map, this);
+	this.setZIndex(google.maps.Marker.MAX_ZINDEX + 1);
+});
+
+
+
 }
 
 
