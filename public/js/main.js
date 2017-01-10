@@ -212,8 +212,6 @@ google.maps.event.addListener(mountainMarker, "click", function (e) {
 	this.setZIndex(google.maps.Marker.MAX_ZINDEX + 1);
 });
 
-}
-
 
 // **************  SHILIN INFO ******************* //
 // Information to go in the pop-up info box.
@@ -243,7 +241,7 @@ var infoBoxOptionsShiLin = {
 };
 
 // Creates pop up info box for Mountain marker, and adding the options above
-var infoBoxMountain = new InfoBox(infoBoxOptionsShiLin);
+var infoBoxShiLin = new InfoBox(infoBoxOptionsShiLin);
 
 // Event listener for when it is clicked
 google.maps.event.addListener(shiLinMarker, "click", function (e) {
