@@ -208,7 +208,7 @@ var infoBoxMountain = new InfoBox(infoBoxOptionsMountain);
 google.maps.event.addListener(mountainMarker, "click", function (e) {
 	//Open the Mountain info box
 	infoBoxMountain.open(map, this);
-	//Changes the z-index property of the marker to make the marker appear on top of other markers.
+	//Changes the z-index property of the marker to make the marker appera on top of other markers.
 	this.setZIndex(google.maps.Marker.MAX_ZINDEX + 1);
 });
 
@@ -243,13 +243,13 @@ var infoBoxOptionsShiLin = {
 };
 
 // Creates pop up info box for Mountain marker, and adding the options above
-var infoBoxShiLin = new InfoBox(infoBoxOptionsShiLin);
+var infoBoxMountain = new InfoBox(infoBoxOptionsShiLin);
 
 // Event listener for when it is clicked
 google.maps.event.addListener(shiLinMarker, "click", function (e) {
 	//Open the Mountain info box
 	infoBoxOptionsShiLin.open(map, this);
-	//Changes the z-index property of the marker to make the marker appear on top of other markers.
+	//Changes the z-index property of the marker to make the marker appera on top of other markers.
 	this.setZIndex(google.maps.Marker.MAX_ZINDEX + 1);
 });
 
