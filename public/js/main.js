@@ -214,8 +214,6 @@ google.maps.event.addListener(mountainMarker, "click", function (e) {
 
 
 
-
-
 // **************  SHILIN INFO ******************* //
 // Information to go in the pop-up info box.
 var boxTextShiLin = document.createElement("div");
@@ -250,6 +248,45 @@ var infoBoxShiLin = new InfoBox(infoBoxOptionsShiLin);
 google.maps.event.addListener(shiLinMarker, "click", function (e) {
 	//Open the Mountain info box
 	infoBoxShiLin.open(map, this);
+	//Changes the z-index property of the marker to make the marker appera on top of other markers.
+	this.setZIndex(google.maps.Marker.MAX_ZINDEX + 1);
+});
+
+
+// **************  HOTSPRING INFO ******************* //
+// Information to go in the pop-up info box.
+var boxTextHotspring = document.createElement("div");
+boxTextHotspring.style.cssText = pop_up_info;
+boxTextHotspring.innerHTML = '<span class="pop_up_box_text"><img src="../content/hotspring.jpg" width="400" height="285" border="0" /></span> <p> The Beitou Hotsprings are quite a site to see! If you are visiting during the winter, check out all the nearby hotspring hotels and open areas that you can firsthand experience the natural hotsprings. </p>';
+
+
+// Sets up the options of the pop up info box
+var infoBoxOptionsHotspring = {
+	content: boxTextHotspring,
+	disableAutoPan: false,
+	maxWidth: 0,
+	pixelOffset: new google.maps.Size(-241, 0),
+	zIndex: null,
+	boxStyle: {
+		background:"url('../content/pop_up_box_top_arrow.png') no-repeat",
+		opacity: 1,
+		width: "430px"
+	},
+	closeBoxMargin: "10px 2px 2px 2px",
+	closeBoxURL: "../content/button_close.png",
+	infoBoxClearance: new google.maps.Size(1, 1),
+	isHidden: false,
+	pane: "floatPane",
+	enableEventPropagation: false
+};
+
+// Creates pop up info box for Mountain marker, and adding the options above
+var infoBoxHotspring = new InfoBox(infoBoxOptionsHotspring);
+
+// Event listener for when it is clicked
+google.maps.event.addListener(hotspringMarker, "click", function (e) {
+	//Open the Mountain info box
+	infoBoxHotspring.open(map, this);
 	//Changes the z-index property of the marker to make the marker appera on top of other markers.
 	this.setZIndex(google.maps.Marker.MAX_ZINDEX + 1);
 });
