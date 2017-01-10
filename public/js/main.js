@@ -213,8 +213,19 @@ google.maps.event.addListener(mountainMarker, "click", function (e) {
 });
 
 
-// testing
-var infoBoxOptions = {
+
+
+
+// **************  SHILIN INFO ******************* //
+// Information to go in the pop-up info box.
+var boxTextShiLin = document.createElement("div");
+boxTextShiLin.style.cssText = pop_up_info;
+boxTextShiLin.innerHTML = '<span class="pop_up_box_text"><img src="../content/shilin.jpg" width="400" height="285" border="0" /></span> <p> ShiLin Nightmarket with great food, games, and lots to shop! </p>';
+
+
+// Sets up the options of the pop up info box
+var infoBoxOptionsShiLin = {
+	content: boxTextShiLin,
 	disableAutoPan: false,
 	maxWidth: 0,
 	pixelOffset: new google.maps.Size(-241, 0),
@@ -231,23 +242,6 @@ var infoBoxOptions = {
 	pane: "floatPane",
 	enableEventPropagation: false
 };
-
-
-
-// **************  SHILIN INFO ******************* //
-// Information to go in the pop-up info box.
-var boxTextShiLin = document.createElement("div");
-boxTextShiLin.style.cssText = pop_up_info;
-boxTextShiLin.innerHTML = '<span class="pop_up_box_text"><img src="../content/shilin.jpg" width="400" height="285" border="0" /></span> <p> ShiLin Nightmarket with great food, games, and lots to shop! </p>';
-
-
-// Sets up the options of the pop up info box
-var infoBoxOptionsNew = {
-	content: boxTextShiLin
-};
-
-var infoboxOptionsShiLin = infoBoxOptionsNew + infoBoxOptions;
-
 
 // Creates pop up info box for Mountain marker, and adding the options above
 var infoBoxShiLin = new InfoBox(infoBoxOptionsShiLin);
