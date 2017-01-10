@@ -243,7 +243,7 @@ boxTextShiLin.innerHTML = '<span class="pop_up_box_text"><img src="../content/sh
 
 // Sets up the options of the pop up info box
 var infoBoxOptionsNew {
-	content: boxTextShiLin,
+	content: boxTextShiLin
 };
 
 var infoboxOptionsShiLin = infoBoxOptionsNew + infoBoxOptions;
